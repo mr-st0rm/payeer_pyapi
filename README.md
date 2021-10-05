@@ -8,6 +8,7 @@ Each response from the Payeer server necessarily contains the auth_error field, 
 >If you have any questions about these errors, [look here](https://github.com/St0rm1k/payeer_api/blob/main/README.md#faq)
 
 ### Getting started with the API
+---
 To work with the API, you need to go to your personal [account](https://payeer.com/ru/account/?tab=api) click on the "Activation" button in the right column.  
 Fill in the user name, generate a secret key for working with the API and for additional security, enter the IP address from which you will send requests to the Payeer server.  
 
@@ -46,7 +47,7 @@ Output -> {'RUB/USD': '0.01446907', 'RUB/EUR': '0.01247441', 'USD/RUB': '76.2888
 
 
 ### FAQ
-
+---
 * When requesting the API, I get the error "auth error: account or apiId or apiPass is incorrect or api-user was blocked"  
 > Check the correctness of the account number, user-id and secret key, as well as the disabled blocking of the user in the settings of mass payments.
 * I can't get rid of the error "IP 1.2.3.4 does not satisfy the security settings"  
