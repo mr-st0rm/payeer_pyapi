@@ -13,6 +13,10 @@ Fill in the user name, generate a secret key for working with the API and for ad
 ### :exclamation:Attention  
 **Do not tell anyone the secret key for the API.After adding the API, you are given a user ID that you need to use, together with the key and account number, for authentication in requests.**
 
+### Examples  
+...
+
+
 ### FAQ
 
 * When requesting the API, I get the error "auth error: account or apiId or apiPass is incorrect or api-user was blocked"  
@@ -24,3 +28,6 @@ Fill in the user name, generate a secret key for working with the API and for ad
   1. Delete the old api user
   2. Create a new one with IP protection
   3. Write down the new access data on your website
+* My website was hacked and all the money was withdrawn through the API
+> For additional security, you can use a second account for payments, where you can keep the amount necessary for transfers in the short term. Please do not neglect the security audits of your site.
+
