@@ -10,7 +10,7 @@ Each response from the Payeer server necessarily contains the auth_error field, 
 To work with the API, you need to go to your personal [account](https://payeer.com/ru/account/?tab=api) click on the "Activation" button in the right column.  
 Fill in the user name, generate a secret key for working with the API and for additional security, enter the IP address from which you will send requests to the Payeer server.  
 
-:exclamation:Attention  
+### :exclamation:Attention  
 **Do not tell anyone the secret key for the API.After adding the API, you are given a user ID that you need to use, together with the key and account number, for authentication in requests.**
 
 ### FAQ
