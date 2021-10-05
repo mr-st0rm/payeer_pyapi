@@ -15,7 +15,7 @@ Fill in the user name, generate a secret key for working with the API and for ad
 ### FAQ
 
 * When requesting the API, I get the error "auth error: account or apiId or apiPass is incorrect or api-user was blocked"  
-   - Check the correctness of the account number, user-id and secret key, as well as the disabled blocking of the user in the settings of mass payments.
+> Check the correctness of the account number, user-id and secret key, as well as the disabled blocking of the user in the settings of mass payments.
 * I can't get rid of the error "IP 1.2.3.4 does not satisfy the security settings"  
 Specify the IP that is returned in error in the settings of mass payments and repeat the request.
 * After a while, the error "AUTH error: account or apiId or apiPass is incorrect or api-user was blocked" appears again, although no settings have been changed  
