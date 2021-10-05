@@ -15,12 +15,18 @@ Fill in the user name, generate a secret key for working with the API and for ad
 ### :exclamation:Attention  
 **Do not tell anyone the secret key for the API.After adding the API, you are given a user ID that you need to use, together with the key and account number, for authentication in requests.**
 
+### Setup
+---
+```
+$pip install payeer_pyapi
+```
+
 ### Examples  
 ---
 Let's try to check the validity of the wallet
 
 ```
-from payeer_api import PayeerApi
+from payeer_pyapi import PayeerApi
 
 wallet = "P10000000000"
 
