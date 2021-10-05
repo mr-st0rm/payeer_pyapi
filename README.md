@@ -14,7 +14,27 @@ Fill in the user name, generate a secret key for working with the API and for ad
 **Do not tell anyone the secret key for the API.After adding the API, you are given a user ID that you need to use, together with the key and account number, for authentication in requests.**
 
 ### Examples  
-...
+Let's try to check the validity of the wallet
+
+```
+from payeer_api import PayeerApi
+
+wallet = "P10000000000"
+
+app = PayeerApi(account="P100101010", api_id=12345678, api_pass="SecretKey")
+
+print(app.check_wallet_available(wallet))
+
+Output > False
+
+```
+
+Let's try to get automatic conversion rates
+```
+print(app.conversion_rates())
+
+Output -> {'RUB/USD': '0.01307531', 'RUB/EUR': '0.01127733', 'USD/RUB': '68.94017', 'USD/EUR': '0.81903631', 'EUR/USD': '1.10190475', 'EUR/RUB': '79.963685'}
+```
 
 
 ### FAQ
