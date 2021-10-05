@@ -2,6 +2,7 @@
 Connecting the Payeer payment system to your product
 
 ### Guide on connecting Payeer to your system
+---
 
 Each response from the Payeer server necessarily contains the auth_error field, which shows whether the authentication parameters are specified correctly. The response to the request also contains an array of errors, which indicates the presence of errors in the execution of the request.
 >If you have any questions about these errors, [look here](https://github.com/St0rm1k/payeer_api/blob/main/README.md#faq)
@@ -14,6 +15,7 @@ Fill in the user name, generate a secret key for working with the API and for ad
 **Do not tell anyone the secret key for the API.After adding the API, you are given a user ID that you need to use, together with the key and account number, for authentication in requests.**
 
 ### Examples  
+---
 Let's try to check the validity of the wallet
 
 ```
