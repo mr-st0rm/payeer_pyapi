@@ -14,12 +14,12 @@ Fill in the user name, generate a secret key for working with the API and for ad
 
 ### FAQ
 
-1. When requesting the API, I get the error "auth error: account or apiId or apiPass is incorrect or api-user was blocked"
-> Check the correctness of the account number, user-id and secret key, as well as the disabled blocking of the user in the settings of mass payments.
-2. I can't get rid of the error "IP 1.2.3.4 does not satisfy the security settings"
-> Specify the IP that is returned in error in the settings of mass payments and repeat the request.
-3. After a while, the error "AUTH error: account or apiId or apiPass is incorrect or api-user was blocked" appears again, although no settings have been changed
-> After a certain number of authorization attempts with an incorrect api secret key, the user is blocked, you can unlock it in the settings of mass payments. You may not have changed the secret key in all places on your site, or someone is trying to find a password for your API:
-  * Delete the old api user
-  * Create a new one with IP protection
-  * Write down the new access data on your website
+* When requesting the API, I get the error "auth error: account or apiId or apiPass is incorrect or api-user was blocked"
+Check the correctness of the account number, user-id and secret key, as well as the disabled blocking of the user in the settings of mass payments.
+*I can't get rid of the error "IP 1.2.3.4 does not satisfy the security settings"
+ Specify the IP that is returned in error in the settings of mass payments and repeat the request.
+* After a while, the error "AUTH error: account or apiId or apiPass is incorrect or api-user was blocked" appears again, although no settings have been changed
+After a certain number of authorization attempts with an incorrect api secret key, the user is blocked, you can unlock it in the settings of mass payments. You may not have changed the secret key in all places on your site, or someone is trying to find a password for your API:
+1. Delete the old api user
+2. Create a new one with IP protection
+3. Write down the new access data on your website
