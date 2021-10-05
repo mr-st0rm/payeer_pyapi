@@ -25,15 +25,21 @@ app = PayeerApi(account="P100101010", api_id=12345678, api_pass="SecretKey")
 
 print(app.check_wallet_available(wallet))
 
-Output > False
+Output -> False
 
 ```
 
-Let's try to get automatic conversion rates
+Let's try to get automatic conversion rates by default get withdrawal rates
 ```
 print(app.conversion_rates())
 
 Output -> {'RUB/USD': '0.01307531', 'RUB/EUR': '0.01127733', 'USD/RUB': '68.94017', 'USD/EUR': '0.81903631', 'EUR/USD': '1.10190475', 'EUR/RUB': '79.963685'}
+```
+If we change `output` parameter, we get entry courses
+```
+print(app.conversion_rates(output="N"))
+
+Output -> {'RUB/USD': '0.01446907', 'RUB/EUR': '0.01247441', 'USD/RUB': '76.2888', 'USD/EUR': '0.90561469', 'EUR/USD': '1.21740517', 'EUR/RUB': '88.45179'}
 ```
 
 
