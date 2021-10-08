@@ -1,4 +1,4 @@
-### payeer_api
+### Payeer_api
 Connecting the Payeer payment system to your product
 
 ### Guide on connecting Payeer to your system
