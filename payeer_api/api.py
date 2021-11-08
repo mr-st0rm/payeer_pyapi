@@ -24,7 +24,6 @@ class PayeerApi:
             auth_error = 1, account or apiId or apiPass is incorrect or api-user was blocked
             auth_error = 2, IP 1.2.3.4 does not satisfy the security settings
         """
-
         return self._send_request()
 
     def _send_request(self, **kwargs) -> typing.Dict:
@@ -47,7 +46,6 @@ class PayeerApi:
 
         :return: dictionary with currencies and their balances (total, available, hold)
         """
-
         return self._send_request(action="getBalance").get("balance")
 
     def transfer_cash(self, transfer_sum: typing.Union[int, float], transfer_to: str, cur_in: str = "RUB",
@@ -65,7 +63,6 @@ class PayeerApi:
         :param comment: payment comment
         :return: historyId transaction number
         """
-
         send_account_data = {
             "action": "transfer",
             "curIn": cur_in,
@@ -85,7 +82,6 @@ class PayeerApi:
         :param wallet: user's wallet number in Payeer
         :return: True if exists
         """
-
         try:
             self._send_request(action="checkUser", user=wallet)
         except PayeerAPIException:
@@ -100,7 +96,6 @@ class PayeerApi:
         :param output: choosing the direction of conversion rates (N - get entry courses, Y - get withdrawal rates)
         :return: dictionary with all rates
         """
-
         return self._send_request(action="getExchangeRate", output=output).get("rate")
 
     def payout(self, sum_in: typing.Union[int, float], to_wallet: str, cur_in: str = "RUB", cur_out: str = "RUB",
@@ -117,7 +112,6 @@ class PayeerApi:
         :param payout_system_id: ID of selected payment system, default Payeer
         :return: history id
         """
-
         return self._send_request(action="payout", ps=payout_system_id, sumIn=sum_in, curIn=cur_in, curOut=cur_out,
                                   param_ACCOUNT_NUMBER=to_wallet).get("historyId")
 
@@ -127,7 +121,6 @@ class PayeerApi:
 
         :return: dictionary with payment systems for withdraw
         """
-
         return self._send_request(action="getPaySystems").get("list")
 
     def transactions_history(self, count: int = 10, sort: str = "desc", transaction_type: str = None) -> typing.List:
